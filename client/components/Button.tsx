@@ -8,25 +8,28 @@ function Button() {
     // const audio = new Audio(soundFile) // Creates a new HTMLAudioelement object
     // audio.play()
     // setSound(soundFile)
-    playAudio(soundFile)
-    console.log('handle click')
-  }
-
-  function playAudio(name: string) {
-    const findAudio = data.find((item) => item.name === name)
-    const audioPath: string = findAudio[path]
+    const findAudio = data.find((item) => item.name === soundFile);
+    let findAudioPath
+    if (typeof findAudio !== 'undefined') {
+      findAudioPath = findAudio.path
+    }
+    findAudioPath = String(findAudioPath)
+    // const audioPath: string = findAudio.path
     // findaudio now equals the whole object
     //we need just one property from the object
-    const audio = new Audio(audioPath)
+    const audio = new Audio(findAudioPath)
     audio.play()
-    setSound(audioPath)
+    setSound(findAudio)
     console.log('play audio')
+
+
   }
+
 
   return (
     <div className="button-wrapper">
       {data.map((soundFile, index) => (
-        <button key={index} onClick={() => handleClick(soundFile)}>
+        <button key={index} onClick={() => handleClick(soundFile.name)}>
           <span className="sound-name">{soundFile.name}</span>
         </button>
       ))}
