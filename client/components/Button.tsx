@@ -13,3 +13,5 @@ function Button(props: Props) {
         </div>
     )
 }
+
+export default Button
