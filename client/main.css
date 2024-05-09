@@ -2,8 +2,8 @@ body {
   background-color: #252525;
   color: #d4d4d4;
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
 }
 
 .placeHolder {
