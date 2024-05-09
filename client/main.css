@@ -11,6 +11,20 @@ body {
   flex-direction: row;
 }
 
+.header {
+  background-color: #3a3a3a;
+  padding: 0%;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 60px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px rgb(93, 118, 140);
+
+}
+
 
 
 
