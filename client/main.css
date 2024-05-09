@@ -1,5 +1,29 @@
 body {
-  background-color: #faf8f1;
-  color: #0a1520;
+  background-color: #252525;
+  color: #d4d4d4;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: start;
+}
+
+.button-wrapper .button {
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 0.4rem;
+  background-color: #3a3a3a;
+  cursor: pointer;
+}
+
+.button .button-effect-name {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  border-bottom: 1px
+
 }
