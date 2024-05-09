@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 interface Props {
     effectName: string
@@ -6,16 +6,11 @@ interface Props {
 
 function Button(props: Props) {
   const [sound, setSound] = useState(false)
-  
-  const handleClick = () = {
-    const audio = new Audio('import audio here')
-    audio.play()
-    setPlaySound(true)
-  }
+
 
     return (
         <div className="button-wrapper">
-            <div className="button">
+            <<div className="button">>
                 <span className="sound-name">
                     {props.effectName}
                 </span>
