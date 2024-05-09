@@ -3,12 +3,23 @@ body {
   color: #d4d4d4;
   font-family: 'Poppins', sans-serif;
   display: flex;
+  flex-direction: row;
 }
+
+.placeHolder {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
 
 .button-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  /* justify-content: start;
+  align-items: center; */
 }
 
 .button-wrapper .button {
