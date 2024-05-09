@@ -1,11 +1,7 @@
 import { useState } from 'react'
-import data from './sounds.ts'
+import data from './data/sounds.ts'
 
-interface Props {
-  effectName: string
-}
-
-function Button(props: Props) {
+function Button() {
   const [currentSound, setSound] = useState(null)
 
   const handleClick = (soundFile: string) => {
@@ -17,13 +13,10 @@ function Button(props: Props) {
     <div className="button-wrapper">
       {data.map((soundFile, index) => (
         <button key={index} onClick={() => handleClick(soundFile)}>
-          <span className="sound-name">
-            {props.effectName}
-            {index + 1}
-          </span>
+          <span className="sound-name">{soundFile.name}</span>
         </button>
       ))}
-      {currentSound && <p> Currently playing: {currentSound} </p>}
+      {/* {currentSound && <p> Currently playing: {currentSound} </p>} */}
     </div>
   ) // Just an idea with 'Currently playing!'
 }

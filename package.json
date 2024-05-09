@@ -7,6 +7,7 @@
   "main": "server/index.js",
   "scripts": {
     "dev": "vite",
+    "dev:client": "vite --host",
     "build": "vite build",
     "test": "vitest",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
