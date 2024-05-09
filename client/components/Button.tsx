@@ -7,7 +7,7 @@ function Button(props: Props) {
         <div className="button-wrapper">
             <div className="button">
                 <span className="sound-name">
-                    "sound names yet to be configured"
+                    {props.effectName}
                 </span>
             </div>
         </div>
