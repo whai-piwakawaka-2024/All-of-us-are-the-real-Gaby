@@ -5,13 +5,16 @@ interface Props {
 function Button(props: Props) {
     return (
         <div className="button-wrapper">
-            <div className="button">
+            <button>
                 <span className="sound-name">
                     {props.effectName}
                 </span>
-            </div>
+            </button>
         </div>
     )
 }
 
 export default Button
+
+//Think super slick one function to rule them all
+//
