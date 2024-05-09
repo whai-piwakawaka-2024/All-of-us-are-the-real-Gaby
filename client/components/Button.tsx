@@ -5,7 +5,7 @@ interface Props {
 }
 
 function Button(props: Props) {
-  const [sound, setSound] = useState(false)
+  const [currentSound, setSound] = useState(false)
 
   const soundFiles = [
     // Will move those to a seperate file soon!
@@ -21,19 +21,21 @@ function Button(props: Props) {
     'your-worst-night-mare.mp3',
   ]
 
-  const handleClick = () => {
-    const audio = new Audio('import audio here') // Creates a new HTMLAudioelement object
+  const handleClick = (soundFile: string) => {
+    const audio = new Audio(soundFile) // Creates a new HTMLAudioelement object
     audio.play()
-    setPlaySound(true)
+    setSound(true)
   }
-
   return (
     <div className="button-wrapper">
-      <button onClick={handleClick}>
-        <span className="sound-name">{props.effectName}</span>
-      </button>
+      {soundFiles.map((soundFile, index) => (
+        <button key={index} onClick={() => handleClick(soundFile)}>
+          <span className="sound-name">{props.effectName}</span>
+        </button>
+      ))}
+      {currentSound && <p> Currently playing: {currentSound} </p>}
     </div>
-  )
+  ) // Just an idea with 'Currently playing!'
 }
 
 export default Button
