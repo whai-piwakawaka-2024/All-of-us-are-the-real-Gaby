@@ -6,6 +6,12 @@ interface Props {
 
 function Button(props: Props) {
   const [sound, setSound] = useState(false)
+  
+  const handleClick = () => {
+    const audio = new Audio('import audio here') // Creates a new HTMLAudioelement object 
+    audio.play()
+    setPlaySound(true)
+  }
 
 
     return (
