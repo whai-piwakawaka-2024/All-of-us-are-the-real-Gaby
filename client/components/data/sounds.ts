@@ -34,12 +34,12 @@ const data = [
   {
     id: 9,
     name: 'Taste like chicken remix',
-    src: '/sound-files/taste-like-chicken-remix.mp3',
+    src: '/sound-files/taste-like-chicken-remix.wav',
   },
   {
     id: 10,
     name: 'Your worst nightmare',
-    src: '/sound-files/your-worst-night-mare.mp3',
+    src: '/sound-files/your-worst-nightmare.mp3',
   },
 ]
 
