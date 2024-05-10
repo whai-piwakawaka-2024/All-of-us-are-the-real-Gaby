@@ -4,10 +4,8 @@ import Header from './Header.tsx'
 function App() {
   return (
     <div>
-      <Header/>
-      <h1>App Gabby is that you!</h1>
-      <p>React development has begun!</p>
-
+      <Header />
+      <h1>App Gaby is that you!</h1>
       <div className="placeHolder">
         <Button />
       </div>
