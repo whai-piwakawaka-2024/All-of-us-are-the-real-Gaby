@@ -1,26 +1,33 @@
 import { useState } from 'react'
-import data from './data/sounds.ts'
+import data from './data/sounds'
 
 function Button() {
-  const [currentSound, setSound] = useState(null)
+  const [currentSound, setSound] = useState(null || 'string')
 
-  const handleClick = (soundFile: string) => {
-    // const audio = new Audio(soundFile) // Creates a new HTMLAudioelement object
-    // audio.play()
-    // setSound(soundFile)
-    playAudio(soundFile)
-    console.log('handle click')
+  const handleClick = (soundFile: soundFiles) => {
+    if (typeof soundFile === 'object' && soundFile.name) {
+      playAudio(soundFile)
+    } else {
+      console.error('Invalid sound file:', soundFile)
+    }
   }
 
   function playAudio(name: string) {
+    if (typeof name !== 'string') {
+      console.error('Invalid audio name:', name)
+      return
+    }
+
     const findAudio = data.find((item) => item.name === name)
-    const audioPath: string = findAudio[path]
-    // findaudio now equals the whole object
-    //we need just one property from the object
-    const audio = new Audio(audioPath)
-    audio.play()
-    setSound(audioPath)
-    console.log('play audio')
+    if (findAudio) {
+      const audioPath: string = findAudio.src
+      console.log('Audio file:', audioPath)
+      const audio = new Audio(audioPath)
+      audio.play()
+      setSound(audioPath)
+    } else {
+      console.error('Audio file not found')
+    }
   }
 
   return (
@@ -30,11 +37,8 @@ function Button() {
           <span className="sound-name">{soundFile.name}</span>
         </button>
       ))}
-      {/* {currentSound && <p> Currently playing: {currentSound} </p>} */}
     </div>
-  ) // Just an idea with 'Currently playing!'
+  )
 }
 
 export default Button
-
-// .catch((error) => console.error('Error playing audio:', error))
