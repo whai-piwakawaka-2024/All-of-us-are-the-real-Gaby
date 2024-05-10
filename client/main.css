@@ -2,6 +2,7 @@ body {
   background-color: #252525;
   color: #d4d4d4;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
   /* display: flex;
   flex-direction: row; */
 }
@@ -33,12 +34,15 @@ button {
   border-radius: 0.4rem;
   background-color: #3a3a3a;
   cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 5px 5px 3px rgb(93, 118, 140);
 }
 
 .reactiveImg {
   height: 15%;
   width: 15%;
   padding: 2%;
+  border-radius: 20%;
 }
 
 .mirroredImg {
@@ -46,6 +50,7 @@ button {
   height: 15%;
   width: 15%;
   padding: 2%;
+  border-radius: 20%;
 }
 
 .button-wrapper {
