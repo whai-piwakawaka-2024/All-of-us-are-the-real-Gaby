@@ -25,7 +25,18 @@ body {
 
 }
 
+.reactiveImg {
+  height: 15%;
+  width: 15%;
+  padding:2%;
+}
 
+.mirroredImg {
+  transform: scaleX(-1); /*Gerard the great, how does this work!?*/
+  height: 15%;
+  width: 15%;
+  padding: 2%;
+}
 
 
 
