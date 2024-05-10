@@ -22,9 +22,7 @@ body {
   font-size: 60px;
   border-radius: 25px;
   box-shadow: 10px 10px 5px rgb(93, 118, 140);
-
 }
-
 
 button {
   color: white;
@@ -37,6 +35,18 @@ button {
   cursor: pointer;
 }
 
+.reactiveImg {
+  height: 15%;
+  width: 15%;
+  padding: 2%;
+}
+
+.mirroredImg {
+  transform: scaleX(-1); /*Gerard the great, how does this work!?*/
+  height: 15%;
+  width: 15%;
+  padding: 2%;
+}
 
 .button-wrapper {
   display: flex;
