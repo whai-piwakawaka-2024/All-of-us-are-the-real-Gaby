@@ -26,7 +26,16 @@ body {
 }
 
 
-
+button {
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 0.4rem;
+  background-color: #3a3a3a;
+  cursor: pointer;
+}
 
 
 .button-wrapper {
