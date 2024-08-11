@@ -1,25 +1,10 @@
-# React Boilerplate
+# Who is the real Gaby?
 
-## Packages Included
+# Inspired by a joke at Dev Academy!
 
-- react
-- react-router-dom
-- express
-- vite
-- vitest
-- eslint
+We decided to find out who indeed, was the real Gaby! This fun project is essentially a soundboard.
 
-## Setup
+I was part of the styling team in this instance, adding styling and sourcing various components of the page, from the pictures to the buttons of the sound board itself.
 
-- [ ] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
-  <details style="padding-left: 2em">
-    <summary>Tip</summary>
 
-    ```sh
-    npm install
-    npm run dev
-    ```
-  </details>
 
----
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-react)
